@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Font from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scroll Reveal JS-->
+     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-text">Loading...</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">MG</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center;">
+                <div class="theme-toggle" id="themeToggle">
+                    <span class="theme-toggle-icon moon">🌙</span>
+                    <span class="theme-toggle-icon sun">☀️</span>
+                </div>
+            </div>
+
+            <div class="menu-toggle hamburger-menu" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+
+        <div class="hero-content">
+            <h2 class="hero-subtitle margin">Hi, Myself</h2>
+            <h1 class="hero-title">Muskan Gupta</h1>
+            <h2 class="hero-subtitle">And I'm an Aspiring Frontend Developer</h2>
+            <p class="hero-description">Crafting intuitive interfaces that make the web both beautiful and functional, I transform concepts into engaging, user-first digital experiences.</p>
+            <a href="https://drive.google.com/uc?export=download&id=1NgHIBHulfoetmZtLyps4SWIincdUpQWM" class="cta-button" download>Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
+        </div>
+
+        <img class="hero-img" src="images/gibbyProfile2.png" alt="profile-img">
+
+        <spline-viewer class="hero-3d-model" url="https://prod.spline.design/dDDPfQIKmflCZzsM/scene.splinecode"></spline-viewer>
+    </section>
+
+    <!--About Me-->
+    <section class="section about-section" id="about">
+        <div class="container sub-container">
+            <div class="wrapper">
+                <div class="section-title about-title">
+                    <h3>About Me</h3>
+                    <p>What I do</p>
+                </div>
+                <div class="section-content">
+                    <div class="about-img">
+                        <img src="images/profile.png" alt="image">
+                    </div>
+                    <div class="about-details">
+                        <div class="about-info">
+                            <h4 class="iam">I'm an Aspiring Web Developer And Frontend Engineer</h4>
+                            <p class="about-description">From the historic charm of Agra, the City of Taj, I've journeyed into the ever-evolving world of the web. As a final-year B.Tech student at Galgotias College of Engineering and Technology, I specialize in crafting seamless, visually captivating front-end experiences. In the past, I led a fashion society as its Club Head, blending creativity with leadership — a combination that still shapes my approach to design. My short-term goal is to sharpen my skills in modern front-end technologies and dive deeper into the art of web design, while my long-term vision is to grow into a full-stack developer, building innovative digital solutions that balance functionality with aesthetics.</p>
+                        </div>
+                        <div class="pro-list">
+                            <div class="pro-card">
+                                <span>01</span>
+                                <p>Internship Completed</p>
+                            </div>
+                            <div class="pro-card">
+                                <span>05+</span>
+                                <p>Academic & Personal Projects</p>
+                            </div>
+                            <div class="pro-card">
+                                <span>150+</span>
+                                <p>LeetCode Questions Solved</p>
+                            </div>
+                        </div>
+                        <div class="about-buttons">
+                            <a href="#home" class="cta-button">Hire Me   <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
+                            </a>
+
+                            <a href="https://drive.google.com/uc?export=download&id=1NgHIBHulfoetmZtLyps4SWIincdUpQWM" class="cta-button" download>Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills/Resume Section-->
+    <section class="section skills-section" id="skills">
+        <div class="container sub-container">
+            <div class="wrapper">
+                <div class="section-title resume-title">
+                    <h3>My Resume</h3>
+                    <p>Combination of Skills & Experience</p>
+                </div>
+                <div class="resume-tabs">
+                    <a href="" class="tab-btn active"><i class="fa-solid fa-graduation-cap"></i>Education</a>
+                    <a href="" class="tab-btn"><i class="fa-solid fa-hand-sparkles"></i>Experience</a>
+                    <a href="" class="tab-btn"><i class="fa-solid fa-wrench"></i>Skills</a>
+                </div>
+                <div class="section-content">
+                    <div class="resume-tab-content education active">
+                        <div class="resume-line"></div>
+                        <div class="resume-items">
+
+                            <div class="item item-left">
+                                <div class="info">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <div>
+                                        <h5>Secondary</h5>
+                                        <p>St. Conrad's Inter College,Agra</p>
+                                        <span>ICSE | 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item item-right">
+                                <div class="info">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <div>
+                                        <h5>Senior Secondary</h5>
+                                        <p>St. Conrad's Inter College, Agra</p>
+                                        <span>ISC | 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item item-left">
+                                <div class="info">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <div>
+                                        <h5>B.Tech IT</h5>
+                                        <p class="wrap">Galgotias College of Engineering & Technology</p>
+                                        <span>2022 - 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="resume-tab-content experience">
+                        <div class="resume-line"></div>
+                        <div class="resume-items">
+
+                            <div class="item item-left">
+                                <div class="info">
+                                    <i class="fa-solid fa-hand-sparkles"></i>
+                                    <div>
+                                        <h5>Web Developer Intern</h5>
+                                        <p>IBM Skillsbuild</p>
+                                        <span>July-Aug 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item item-right">
+                                <div class="info">
+                                    <i class="fa-solid fa-hand-sparkles"></i>
+                                    <div>
+                                        <h5>Club Head - Fashion Society</h5>
+                                        <p>Student Council, GCET</p>
+                                        <span>2024 - 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="resume-tab-content personal-skills">
+                        <div class="skill-container">
+
+                            <div class="skill-card">
+                                <div class="skill-title">
+                                    <i class="fa-solid fa-computer"></i>
+                                    <span>Front-End Technologies</span>
+                                </div>
+
+                                <div class="skill-categories">
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>HTML</h5>
+                                            <span>Advanced</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>Tailwind CSS</h5>
+                                            <span>Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>CSS</h5>
+                                            <span>Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>React.JS</h5>
+                                            <span>Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>JavaScript</h5>
+                                            <span>Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>GSAP</h5>
+                                            <span>Basic</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-title">
+                                    <i class="fa-solid fa-code"></i>
+                                    <span>Programming Languages</span>
+                                </div>
+                                <div class="skill-categories m-bottom">
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>Python</h5>
+                                            <span>Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>Java</h5>
+                                            <span>Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>C</h5>
+                                            <span>Basic</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-title">
+                                    <i class="fa-solid fa-toolbox"></i>
+                                    <span>Tools</span>
+                                </div>
+                                <div class="skill-categories m-bottom">
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>Git</h5>
+                                            <span>Intermediate</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>Spline 3D</h5>
+                                            <span>Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <div class="skill-info">
+                                            <h5>Github</h5>
+                                            <span>Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section class="section projects-section" id="projects">
+        <div class="container sub-container">
+            <div class="wrapper">
+                <div class="section-title portfolio-title">
+                    <h3>Projects</h3>
+                    <p>My Creative Works</p>
+                </div>
+
+                <div class="section-content">
+                    <div class="portfolio-container">
+
+                        <div class="card-with-modal">
+                            <div class="portfolio-card">
+                                <div class="card-img">
+                                    <img src="images/project1.jpg" alt="project">
+                                </div>
+                                <div class="card-info">
+                                    <h4>Leetlytics</h4>
+                                    <span>Track. Solve. Improve.</span>
+                                    <i class="fa-solid fa-location-arrow card-btn"></i>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-modal-backdrop"> 
+                                <div class="portfolio-modal"> 
+                                    <a href="" class="modal-close-btn">
+                                        <i class="fa-solid fa-xmark"></i> 
+                                    </a> 
+                                <div class="modal-content"> 
+                                    <div class="modal-img"> 
+                                        <img src="images/project1.jpg" alt="project"> 
+                                    </div> 
+                                    <h4 class="modal-title">Leetlytics</h4> 
+                                    <p class="description">Leetlytics is a sleek analytics dashboard that tracks your LeetCode progress in real time. It fetches live data using the LeetCode Stats API and transforms it into an intuitive, interactive interface. With HTML, CSS, and JavaScript, Leetlytics visualizes your coding journey through clean graphs, stats, and dynamic UI elements — making problem-solving progress easy to monitor and motivating to follow.</p> 
+                                    <div class="buttons-container"> 
+                                        <a href="https://drive.google.com/file/d/1sX3J8DKBY3IswBK980AsxCglNW0LXJAW/view?usp=sharing" class="cta-button" target="_blank">Live Demo <i class="fa-solid fa-circle-play"></i></a> 
+                                        <a href="https://github.com/muskaann13/Leetlytics-Metrics-That-Move-Your-Leet-Game-Forward" class="cta-button" target="_blank">GitHub repo <i class="fa-solid fa-code-branch"></i></a>
+                                    </div> 
+                                </div> 
+                            </div> 
+                            </div>
+                        </div>
+
+                        <div class="card-with-modal">
+                            <div class="portfolio-card">
+                                <div class="card-img">
+                                    <img src="images/project2.png" alt="project">
+                                </div>
+                                <div class="card-info">
+                                    <h4>Jibby</h4>
+                                    <span>Where food delivery meets sleek slider design</span>
+                                    <i class="fa-solid fa-location-arrow card-btn"></i>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-modal-backdrop">
+                                <div class="portfolio-modal">
+                                    <a href="" class="modal-close-btn">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a> 
+                                    <div class="modal-content">
+                                        <div class="modal-img">
+                                            <img src="images/project2.png" alt="project">
+                                        </div>
+                                        <h4 class="modal-title">Jibby</h4>
+                                        <p class="description">Jibby is a demo food delivery website built to showcase smooth, interactive web experiences. Its highlight feature is a dynamic slider that brings dishes to life with seamless transitions and engaging visuals, replicating the feel of top-tier delivery apps. Developed using HTML, CSS, and JavaScript, Jibby offers intuitive navigation, responsive layouts, and a visually appealing design that adapts effortlessly across devices. More than just a demo, it demonstrates the power of frontend creativity — combining clean UI, interactive elements, and performance optimization to deliver a realistic, app-like ordering journey.</p>
+                                        <div class="buttons-container">
+                                            <a href="https://drive.google.com/file/d/1N2IdcsR6PX61d13KTJRgJHyFfG3grIXk/view?usp=sharing" class="cta-button" target="_blank">Live Demo  <i class="fa-solid fa-circle-play"></i></a>
+                                            <a href="https://github.com/muskaann13/Jibby---Food-Delivery-Website" class="cta-button" target="_blank">GitHub repo  <i class="fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-with-modal">
+                            <div class="portfolio-card">
+                                <div class="card-img">
+                                    <img src="images/project3.jpg" alt="project">
+                                </div>
+                                <div class="card-info">
+                                    <h4>Mini Amazon Clone</h4>
+                                    <span>Amazon experience, re-imagined in mini.</span>
+                                    <i class="fa-solid fa-location-arrow card-btn"></i>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-modal-backdrop">
+                                <div class="portfolio-modal">
+                                    <a href="" class="modal-close-btn">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a> 
+                                    <div class="modal-content">
+                                        <div class="modal-img">
+                                            <img src="images/project3.jpg" alt="project">
+                                        </div>
+                                        <h4 class="modal-title">Mini Amazon Clone</h4>
+                                        <p class="description">Mini Amazon Clone - a simple yet powerful e-commerce experience with API + localStorage. It is a demo e-commerce website built with HTML, CSS, and JavaScript that recreates the core shopping experience of Amazon. Product details are dynamically fetched from a backend API, making the site data-driven and closer to a real-world application. The project also implements localStorage to manage the shopping cart, ensuring that items remain saved even after refreshing or reopening the browser. With product listings, categories, and a responsive design, it demonstrates how modern e-commerce platforms handle data fetching, cart persistence, and clean UI design while giving users a simplified version of Amazon's shopping flow.</p>
+                                        <div class="buttons-container">
+                                            <a href="https://drive.google.com/file/d/1BMSbOaGvIOQ-Cq1MrE12vXpIPRjcpMm7/view?usp=sharing" class="cta-button" target="_blank">Live Demo  <i class="fa-solid fa-circle-play"></i></a>
+                                            <a href="https://github.com/muskaann13/Mini-Amazon-Clone" class="cta-button" target="_blank">GitHub repo  <i class="fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Me-->
+    <section class="section contact-section" id="contact">
+        <div class="container sub-container">
+            <div class="wrapper">
+                <div class="section-title">
+                    <h3>Contact Me</h3>
+                    <p>Get In Touch</p>
+                </div>
+
+                <div class="section-content">
+                    <div class="contact-container">
+
+                        <div class="contact-info">
+                            <h3>Contact Info</h3>
+                            <ul class="contact-details">
+
+                                <li class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-method">
+                                        <span>E-mail</span>
+                                        <h4>muskanguptamg013@gmail.com</h4>
+                                        <a href="mailto:someone@example.com" target="_blank">
+                                            <span>Send <i class="fa-solid fa-paper-plane"></i></span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class='fab fa-whatsapp'></i>
+                                    </div>
+                                    <div class="contact-method">
+                                        <span>Whatsapp</span>
+                                        <h4>+91 8938902646</h4>
+                                        <a href=" https://wa.me/+918938902646?text=Hello%20there!%20How%20can%20I%20help%20you?" target="_blank">
+                                            <span>Send <i class="fa-solid fa-paper-plane"></i></span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <h3>Social Info</h3>
+                            <ul class="contact-social-links">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/muskaann13/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/muskaann13" target="_blank">
+                                        <i class="fa-solid fa-x"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/muskaann13/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="contact-form-body">
+                            <h2>Let's work <span>together.</span></h2>
+                            <p>Please fill out the form on this section to connect with me. Or call between 1:00 p.m. and 7:00 p.m. IST, Monday through Friday.</p>
+                            <form action="" method="POST" id="contact-form">
+                                <div class="input-group">
+                                    <input type="text" name="full-name" placeholder="Name *" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="email" placeholder="Email *" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="subject" placeholder="Your Subject *" required>
+                                </div>
+                                <div class="input-group">
+                                    <textarea name="message" placeholder="Your Message *" required></textarea>
+                                </div>
+                                <div class="input-group send-message">
+                                    <button class="cta-button submit-btn" name="submit" type="submit">Send Message</button>
+                                    <div class="contact-form-alert">
+                                        <!-- <span>Your message sent successfully </span>
+                                        <i class="fa-solid fa-circle-check"></i> -->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#home" class="logo"><span>MG</span></a>
+            
+            <p class="copy-right">&copy All rights reserved by <span>Muskan Gupta</span></p>
+        </div>
+    </footer>
+
+    <!-- 3D Model -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.48/build/spline-viewer.js"></script>
+
+    <!-- GSAP Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!--Email JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--Main JS-->
+    <script src="app.js"></script>
+</body>
+</html>
