@@ -395,6 +395,6 @@ ScrollReveal().reveal('.pro-card, .about-buttons, .resume-tabs .tab-btn', {delay
 ScrollReveal().reveal('#skills .section-content .education .resume-line', {delay: 700, origin: 'bottom'});
 ScrollReveal().reveal('.education .resume-items .item-left', {delay: 900, origin: 'left', interval: 400});
 ScrollReveal().reveal('.education .resume-items .item-right', {delay: 920, origin: 'right'});
-ScrollReveal().reveal('.portfolio-card', {delay: 300, origin: 'bottom', interval: 300});
-ScrollReveal().reveal('.contact-info', {delay: 300, origin: 'left'});
-ScrollReveal().reveal('.contact-form-body', {delay: 300, origin: 'right'});
+ScrollReveal().reveal('.portfolio-card', {delay: 300, origin: 'bottom', interval: 200});
+ScrollReveal().reveal('.contact-info', {delay: 500, origin: 'left'});
+ScrollReveal().reveal('.contact-form-body', {delay: 500, origin: 'right'});
